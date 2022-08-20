@@ -3,8 +3,8 @@ function getInputFieldValueById (inputId){
     const inputField = document.getElementById(inputId);
     const inputFieldAmountString = inputField.value;
     const inputFieldAmount = parseFloat(inputFieldAmountString);
-    inputField.value = '';
     return inputFieldAmount;
+    
 }
 
 //common function for text field...
@@ -19,4 +19,5 @@ function getTextElementValueById(elementId){
 function setTextElementValueById(elementId,newValue){
     const textElement = document.getElementById(elementId);
     textElement.innerText = newValue;
+    
 }

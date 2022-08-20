@@ -7,8 +7,8 @@ document.getElementById('btn-save').addEventListener('click', function(){
     const saveAmountValue = userIncomeAmount * (percentageField/100);
     setTextElementValueById('save-amount',saveAmountValue);
     //calculate reaming balance...
+    const totalBalance = getTextElementValueById('total-balance');
     const remianBalance = getTextElementValueById('reamin-balance');
-    const remainBalanceAmount =  presentTotalBalance - saveAmountValue;
-    // remianBalance.innerText = remainBalanceAmount;
+    const remainBalanceAmount =  totalBalance - saveAmountValue;
     setTextElementValueById('reamin-balance',remainBalanceAmount);
 })
