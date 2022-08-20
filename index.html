@@ -11,7 +11,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Money master main</h1>
+    <!-- header section start -->
+    <header class="mt-4 text-center">
+        <h1 class="text-5xl font-bold text-teal-700">Money Master</h1>
+    </header>
+    <!-- header section end -->
+    <!-- main section start -->
+    <main>
+        <section class="mt-5 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <img src="images/main-pic.png" alt="">
+                </div>
+                <!-- ... -->
+                <div class="bg-slate-100 text-center">
+                    <!-- income field -->
+                    <h3 class="text-2xl font-semibold mb-3">Income</h3>
+                    <h4 class="text-xl inline">Income :</h4> <input type="text" id="" class="bg-slate-300 p-1">
+                    <!-- expenses field  -->
+                    <h3 class="text-2xl font-semibold mb-3 mt-5">Expenses</h3>
+                    <h4 class="text-xl inline">Food :</h4> <input type="text" id="" class="bg-slate-300 p-1 mb-3"> <br>
+                    <h4 class="text-xl inline">Rent :</h4> <input type="text" id="" class="bg-slate-300 p-1 mb-3"> <br>
+                    <h4 class="text-xl inline">Clothes :</h4> <input type="text" id="" class="bg-slate-300 p-1 mb-3"> <br>
+                    <!-- claculate button -->
+                    <button type="submit" class="bg-sky-400 px-6 py-2 text-2xl rounded-lg text-white">Calculate</button>
+                    <!-- total balance  -->
+                    <h1 class="mt-5 text-2xl font-semibold">Total Expenses : <span>00</span> </h1>
+                    <!-- display balance  -->
+                    <h1 class="mt-5 text-2xl font-semibold">Balance : <span>00</span> </h1>
+                    <!-- tax button + tax balance show -->
+                    <h4 class="text-xl inline mt-5">Save :</h4>
+                    <input type="text" id="" class="bg-slate-300 p-1 mt-4 w-2/12"> %
+                    <button type="submit" class="bg-sky-400 px-6 py-1 text-2xl rounded-lg text-white">Save</button>
+                    <!-- display savings amount  -->
+                    <h1 class="mt-5 text-2xl font-semibold">Saving Amount : <span>00</span> </h1>
+                    <!-- display Remaining balance -->
+                    <h1 class="mt-5 text-2xl font-semibold">Remaining Balance : <span>00</span> </h1>
+                </div>
+              </div>
+
+        </section>
+    </main>
+    <!-- main section end-->
     
 </body>
 </html>
