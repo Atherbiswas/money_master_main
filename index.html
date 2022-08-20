@@ -46,14 +46,14 @@
 
                     <!-- tax button + tax balance show -->
                     <h4 class="text-xl inline mt-5">Save :</h4>
-                    <input type="text" id="" class="bg-slate-300 p-1 mt-4 w-2/12"> %
-                    <button type="submit" class="bg-sky-400 px-6 py-1 text-2xl rounded-lg text-white">Save</button>
+                    <input type="text" id="percentage-field" class="bg-slate-300 p-1 mt-4 w-2/12"> %
+                    <button id="btn-save" type="submit" class="bg-sky-400 px-6 py-1 text-2xl rounded-lg text-white">Save</button>
 
                     <!-- display savings amount  -->
-                    <h1 class="mt-5 text-2xl font-semibold">Saving Amount : <span>00</span> </h1>
+                    <h1 class="mt-5 text-2xl font-semibold">Saving Amount : <span id="save-amount">00</span> </h1>
 
                     <!-- display Remaining balance -->
-                    <h1 class="mt-5 text-2xl font-semibold">Remaining Balance : <span>00</span> </h1>
+                    <h1 class="mt-5 text-2xl font-semibold">Remaining Balance : <span id="reamin-balance">00</span> </h1>
                 </div>
               </div>
 
@@ -63,7 +63,7 @@
     <!-- js file link  -->
     <script src="script/utilities.js"></script>
     <script src="script/calculate.js"></script>
-    <script src="script/tax.js"></script>
+    <script src="script/save.js"></script>
     
 </body>
 </html>
